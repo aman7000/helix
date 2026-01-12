@@ -1,3 +1,10 @@
+[language-server.codeium]
+command = "~/.local/bin/codeium-ls"
+
+[[language]]
+name = "python"
+language-servers = ["codeium", "pyright"]
+
 
 [language-server.gpt]
 command = "bun"
@@ -18,7 +25,7 @@ name = "rust"
 auto-format = true
 language-servers = [
     "rust-analyzer",
-    "lsp-ai",
+    "codeium",
     "gpt"
 ]
 

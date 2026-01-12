@@ -65,7 +65,9 @@ C-v = [":new",":insert-output lf-pick",":theme default","select_all","split_sele
 
 [keys.select]
 X = "select_line_above"
-A-x = "extend_to_line_bounds"
+# A-x = "extend_to_line_bounds"
+"A-e" = ":pipe ~/.local/bin/hx-ai-edit"
+"A-x" = ":pipe ~/.local/bin/hx-ai-explain"
 
 [keys.normal."space"]
 v = ":w"
